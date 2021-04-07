@@ -1,0 +1,43 @@
+.container{
+    max-width:1200px;
+    margin:auto;
+    font-family: Roboto,sans-serif;
+}
+
+/* header */
+
+header{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header__logo{
+    justify-content: center;
+}
+
+form{
+    display:flex;
+}
+
+/* nav */
+
+nav{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
+button{
+    display:flex;
+}
+
+/* section */
+
+.container-bloc-restaurant{
+    display:flex;
+}
+
+.bloc-restaurant img{
+    width:20%;
+}
