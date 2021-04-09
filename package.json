@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Jeremie-237/JeremieBaudino_3_06042021#readme",
   "dependencies": {
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "sass": "^1.32.8"
   }
 }
