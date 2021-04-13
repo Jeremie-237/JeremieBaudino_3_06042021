@@ -1,0 +1,25 @@
+/* footer */
+
+footer{
+    background-color: #333;
+    height:14rem;
+    .footer_logo{
+        margin-left:2.5rem;
+        padding-top:2rem;
+        img{
+            width:8rem;
+            filter:invert(1);
+        }
+    }
+    ul li{
+        list-style-type: none;
+        margin-bottom: 8px;
+        .fa-utensils , .fa-hands-helping{
+            min-width:30px;
+            color:#fff;
+        }
+        a{
+           color:#fff;
+        }
+   }
+}
