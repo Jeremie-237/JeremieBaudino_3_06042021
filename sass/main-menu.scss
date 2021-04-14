@@ -1,6 +1,7 @@
 @import 'reset.scss';
 @import 'variables.scss';
 @import 'mixin.scss';
+@import 'footer.scss';
 
 .container{
     max-width:900px;
@@ -55,4 +56,49 @@ section{
             }
         }
     }
+    .menu-content{
+        display:flex;
+        flex-direction: column;
+
+        .menu-section{
+
+            .heading{
+                border-bottom:3px solid #15DEA5;
+                padding-bottom: 5px;
+                width:45px;
+                font-size: 1.4rem;
+                font-weight: 100;
+
+            }
+            .item{
+                background-color: #fff;
+                box-shadow: 4px 4px 4px #DCDCDC;
+                margin-bottom:20px;
+                border-radius: 20px;
+                padding:5px 20px 15px 15px;
+                display:flex;
+                align-items:flex-end;
+                justify-content: space-between;
+                h3{
+                    margin-bottom:3px;
+                }
+
+            }
+
+        
+        }
+    }
+    button{
+        background:linear-gradient($purplelight,$purpledark);
+        color:#fff;
+        border:none;
+        border-radius: 25px;
+        width:40%;
+        height:3.5em;
+        font-size:15px;
+        align-self:center;
+        margin-top:25px;
+        margin-bottom: 70px;
+    }
 }
+
