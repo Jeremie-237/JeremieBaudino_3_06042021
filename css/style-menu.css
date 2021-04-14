@@ -40,6 +40,8 @@ footer ul li a {
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin: 20px 0 20px 0;
 }
 header a {
   margin-left: 25px;
@@ -49,9 +51,11 @@ header .fas {
   color: black;
   font-size: x-large;
 }
+header .header__logo {
+  width: 75%;
+}
 header .header__logo img {
   width: 250px;
-  margin: 1vw 12vw;
 }
 
 section img {
@@ -113,6 +117,20 @@ section button {
   align-self: center;
   margin-top: 25px;
   margin-bottom: 70px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .container section .menu-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .container section .menu-content .menu-section {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=style-menu.css.map */

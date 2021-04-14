@@ -12,6 +12,8 @@
 header{
     display:flex;
     align-items: center;
+    justify-content:space-between;
+    margin:20px 0 20px 0 ;
     a{
         margin-left:25px;
     }
@@ -21,10 +23,10 @@ header{
         font-size: x-large;
     }
     .header__logo{
+        width:75%;
         
         img{
             width:250px;
-            margin:1vw 12vw;
         }
     }
 }
@@ -101,4 +103,28 @@ section{
         margin-bottom: 70px;
     }
 }
+
+@media screen and (min-width:1200px){
+
+    .container{
+        max-width:1200px;
+
+        section{
+
+            .menu-content{
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                .menu-section{
+                width:30%;
+                }
+                
+                
+            }
+        
+        }
+    }
+}
+
 

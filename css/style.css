@@ -120,7 +120,10 @@ footer ul li a {
   box-shadow: 0 5px 15px 0 #c3c3c3;
 }
 .manual .wrapper-buttons .nav_button:hover {
-  background-color: #ff79da;
+  background-color: #f5edff;
+}
+.manual .wrapper-buttons .nav_button:hover .button__icon {
+  color: #9356dc;
 }
 .manual .wrapper-buttons .nav_button .button__number {
   background-color: #9356dc;

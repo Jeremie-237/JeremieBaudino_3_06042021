@@ -22,7 +22,10 @@
         margin:0px -4px;
         .nav_button{
             &:hover {
-                background-color:$purplelight;
+                background-color:#f5edff;
+                .button__icon{
+                    color:$purpledark;
+                }
             }
             position:relative;
             width:100%;
