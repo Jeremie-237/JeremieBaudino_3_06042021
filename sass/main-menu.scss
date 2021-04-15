@@ -95,7 +95,7 @@ section{
         color:#fff;
         border:none;
         border-radius: 25px;
-        width:40%;
+        width:60%;
         height:3.5em;
         font-size:15px;
         align-self:center;
@@ -104,12 +104,20 @@ section{
     }
 }
 
-@media screen and (min-width:1200px){
+@media screen and (min-width:1100px){
 
     .container{
         max-width:1200px;
 
+        .header__logo{
+            width:65%;
+        }
+
         section{
+
+            button{
+                width:30%
+            }
 
             .menu-content{
                 flex-direction: row;
@@ -126,5 +134,9 @@ section{
         }
     }
 }
+
+
+
+
 
 
