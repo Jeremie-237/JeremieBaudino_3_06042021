@@ -104,36 +104,7 @@ section{
     }
 }
 
-@media screen and (min-width:1100px){
 
-    .container{
-        max-width:1200px;
-
-        .header__logo{
-            width:65%;
-        }
-
-        section{
-
-            button{
-                width:30%
-            }
-
-            .menu-content{
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-
-                .menu-section{
-                width:30%;
-                }
-                
-                
-            }
-        
-        }
-    }
-}
 
 
 

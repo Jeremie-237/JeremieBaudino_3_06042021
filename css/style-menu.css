@@ -119,24 +119,4 @@ section button {
   margin-bottom: 70px;
 }
 
-@media screen and (min-width: 1100px) {
-  .container {
-    max-width: 1200px;
-  }
-  .container .header__logo {
-    width: 65%;
-  }
-  .container section button {
-    width: 30%;
-  }
-  .container section .menu-content {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  .container section .menu-content .menu-section {
-    width: 30%;
-  }
-}
-
 /*# sourceMappingURL=style-menu.css.map */
