@@ -191,6 +191,7 @@ footer ul li a {
 .section-restaurants .restaurants .restaurant .bloc-restaurant__label {
   display: flex;
   justify-content: space-between;
+  color: black;
 }
 .section-restaurants .restaurants .restaurant .bloc-restaurant__label .label__icon {
   align-self: center;
