@@ -40,19 +40,19 @@ footer ul li a {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin: 20px 0 20px 0;
+  position: relative;
 }
 header a {
   margin-left: 25px;
+  position: absolute;
+  left: 0;
 }
 header .fas {
   font-weight: bolder;
   color: black;
   font-size: x-large;
-}
-header .header__logo {
-  width: 75%;
 }
 header .header__logo img {
   width: 250px;

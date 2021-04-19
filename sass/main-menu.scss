@@ -12,10 +12,13 @@
 header{
     display:flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content:center;
     margin:20px 0 20px 0 ;
+    position:relative;
     a{
         margin-left:25px;
+        position:absolute;
+        left:0;
     }
     .fas{
         font-weight: bolder;
@@ -23,7 +26,7 @@ header{
         font-size: x-large;
     }
     .header__logo{
-        width:75%;
+        
         
         img{
             width:250px;
@@ -103,6 +106,7 @@ section{
         margin-bottom: 70px;
     }
 }
+
 
 
 
