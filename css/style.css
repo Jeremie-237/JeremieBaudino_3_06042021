@@ -61,6 +61,11 @@ header .header__logo img {
   height: 3.5rem;
   align-items: center;
   margin-bottom: 2rem;
+  transition: all 1500ms;
+}
+.main-container-header .header-search-button:hover {
+  box-shadow: 2px 3px 5px 4px #a9a9a9;
+  background: linear-gradient(#ff8cd9, #9356dc);
 }
 
 /* footer */
