@@ -113,6 +113,23 @@
                     align-self: center;
                     font-size: xx-large;
                     margin-right:2rem;
+                    .full{
+                        color:transparent;
+                        z-index:1;
+                    }
+                    .empty{
+                        position:absolute;
+                        transition-duration: 1s;
+                        
+                        &:hover{
+                            color:transparent;
+                        }
+                        &:hover + .full{
+                            background:linear-gradient($purplelight,$purpledark);
+                            -webkit-background-clip: text;
+                        }
+                    }
+                    
                 }
                  .label__heading{
                     margin-left: 15px;

@@ -203,6 +203,21 @@ footer ul li a {
   font-size: xx-large;
   margin-right: 2rem;
 }
+.section-restaurants .restaurants .restaurant .bloc-restaurant__label .label__icon .full {
+  color: transparent;
+  z-index: 1;
+}
+.section-restaurants .restaurants .restaurant .bloc-restaurant__label .label__icon .empty {
+  position: absolute;
+  transition-duration: 1s;
+}
+.section-restaurants .restaurants .restaurant .bloc-restaurant__label .label__icon .empty:hover {
+  color: transparent;
+}
+.section-restaurants .restaurants .restaurant .bloc-restaurant__label .label__icon .empty:hover + .full {
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+}
 .section-restaurants .restaurants .restaurant .bloc-restaurant__label .label__heading {
   margin-left: 15px;
 }
