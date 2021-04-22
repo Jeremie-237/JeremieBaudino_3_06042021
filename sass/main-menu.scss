@@ -35,6 +35,7 @@ header{
 }
 
 section{
+    
 
     img{
         width:100%;
@@ -68,7 +69,12 @@ section{
         flex-direction: column;
 
         .menu-section{
+            opacity:0;
+            animation:card-opacity 2s forwards;
 
+            
+            
+            
             .heading{
                 border-bottom:3px solid #15DEA5;
                 padding-bottom: 5px;
@@ -91,9 +97,32 @@ section{
                 }
 
             }
+            @keyframes card-opacity {
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity:1;
+                }
+            }
 
         
         }
+        .part1{
+            animation-delay: 1s;
+        }
+
+        .part2{
+            animation-delay: 3s;
+
+        }
+
+        .part3{
+            animation-delay: 4s;
+
+        }
+        
+        
     }
     button{
         background:linear-gradient($purplelight,$purpledark);

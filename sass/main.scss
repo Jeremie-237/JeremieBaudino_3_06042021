@@ -3,6 +3,7 @@
 @import 'mixin.scss';
 @import 'header.scss';
 @import 'footer.scss';
+@import 'loader.scss';
 
 .container{
     max-width:900px;
@@ -74,6 +75,7 @@
     padding:20px;
     h2{
         margin-left:1em;
+        
     }
     .restaurants{
         display:flex;
