@@ -88,6 +88,7 @@
             background-color:#fff;
             border-radius: 2em;
             max-width:370px;
+            width:100%;
             a{
                 color:black;
             }
@@ -115,21 +116,30 @@
                     align-self: center;
                     font-size: xx-large;
                     margin-right:2rem;
+                    &:hover{
+                        .empty{
+                             color:transparent;
+                             transition-duration: 1.6s;
+                        }
+                        .full{
+                             background:linear-gradient($purplelight,$purpledark);
+                             -webkit-background-clip: text;
+                             transition: opacity ease-in-out 500ms , transform cubic-bezier(0.42,0,0.51,1) 500ms;
+                             transform: scale(1);
+                             
+                             
+
+                             
+                        }
+                    }
                     .full{
-                        color:transparent;
+                        color: transparent;
                         z-index:1;
+                        transform: scale(0);
                     }
                     .empty{
                         position:absolute;
                         transition-duration: 1s;
-                        
-                        &:hover{
-                            color:transparent;
-                        }
-                        &:hover + .full{
-                            background:linear-gradient($purplelight,$purpledark);
-                            -webkit-background-clip: text;
-                        }
                     }
                     
                 }

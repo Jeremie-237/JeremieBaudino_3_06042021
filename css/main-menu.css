@@ -81,8 +81,25 @@ section .menu .restaurant-heading h1 {
   font-family: "Shrikhand";
   font-size: xx-large;
 }
-section .menu .restaurant-heading .far {
-  font-size: x-large;
+section .menu .restaurant-heading .heart-menu:hover .empty {
+  color: transparent;
+  transition-duration: 1.6s;
+}
+section .menu .restaurant-heading .heart-menu:hover .full {
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  transition: opacity ease-in-out 500ms, transform cubic-bezier(0.42, 0, 0.51, 1) 500ms;
+  transform: scale(1);
+}
+section .menu .restaurant-heading .full {
+  z-index: 1;
+  color: transparent;
+  transform: scale(0);
+  font-size: xx-large;
+}
+section .menu .restaurant-heading .empty {
+  font-size: xx-large;
+  position: absolute;
 }
 section .menu-content {
   display: flex;

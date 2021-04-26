@@ -59,8 +59,30 @@ section{
                 font-family:'Shrikhand';
                 font-size:xx-large;
             }
-            .far{
-                font-size:x-large;
+            .heart-menu{
+
+                &:hover{
+                    .empty{
+                         color:transparent;
+                         transition-duration: 1.6s;
+                    }
+                    .full{
+                         background:linear-gradient($purplelight,$purpledark);
+                         -webkit-background-clip: text;
+                         transition: opacity ease-in-out 500ms , transform cubic-bezier(0.42,0,0.51,1) 500ms;
+                         transform: scale(1);
+                    }
+                }
+            }
+            .full{
+                z-index: 1;
+                color: transparent;
+                transform: scale(0);
+                font-size:xx-large;
+            }
+            .empty{
+                font-size:xx-large;
+                position:absolute;
             }
         }
     }

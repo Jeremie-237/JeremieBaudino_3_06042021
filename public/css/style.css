@@ -261,6 +261,7 @@ footer ul li a {
   background-color: #fff;
   border-radius: 2em;
   max-width: 370px;
+  width: 100%;
 }
 .section-restaurants .restaurants .restaurant a {
   color: black;
@@ -291,20 +292,24 @@ footer ul li a {
   font-size: xx-large;
   margin-right: 2rem;
 }
+.section-restaurants .restaurants .restaurant .bloc-restaurant__label .label__icon:hover .empty {
+  color: transparent;
+  transition-duration: 1.6s;
+}
+.section-restaurants .restaurants .restaurant .bloc-restaurant__label .label__icon:hover .full {
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  transition: opacity ease-in-out 500ms, transform cubic-bezier(0.42, 0, 0.51, 1) 500ms;
+  transform: scale(1);
+}
 .section-restaurants .restaurants .restaurant .bloc-restaurant__label .label__icon .full {
   color: transparent;
   z-index: 1;
+  transform: scale(0);
 }
 .section-restaurants .restaurants .restaurant .bloc-restaurant__label .label__icon .empty {
   position: absolute;
   transition-duration: 1s;
-}
-.section-restaurants .restaurants .restaurant .bloc-restaurant__label .label__icon .empty:hover {
-  color: transparent;
-}
-.section-restaurants .restaurants .restaurant .bloc-restaurant__label .label__icon .empty:hover + .full {
-  background: linear-gradient(#ff79da, #9356dc);
-  -webkit-background-clip: text;
 }
 .section-restaurants .restaurants .restaurant .bloc-restaurant__label .label__heading {
   margin-left: 15px;
