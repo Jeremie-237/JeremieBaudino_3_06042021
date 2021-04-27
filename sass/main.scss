@@ -1,6 +1,5 @@
 @import 'reset.scss';
 @import 'variables.scss';
-@import 'mixin.scss';
 @import 'header.scss';
 @import 'footer.scss';
 @import 'loader.scss';
@@ -126,10 +125,6 @@
                              -webkit-background-clip: text;
                              transition: opacity ease-in-out 500ms , transform cubic-bezier(0.42,0,0.51,1) 500ms;
                              transform: scale(1);
-                             
-                             
-
-                             
                         }
                     }
                     .full{

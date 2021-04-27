@@ -66,9 +66,9 @@ header .header__logo img {
 .main-container-header .header-search-button:hover {
   box-shadow: 2px 3px 5px 4px #a9a9a9;
   background: linear-gradient(#ff8cd9, #9356dc);
+  cursor: pointer;
 }
 
-/* footer */
 footer {
   background-color: #333;
   height: 14rem;
