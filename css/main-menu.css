@@ -121,9 +121,17 @@ section .menu-content .menu-section .item {
   box-shadow: 4px 4px 4px #DCDCDC;
   margin-bottom: 20px;
   border-radius: 20px;
-  padding: 5px 20px 15px 15px;
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+section .menu-content .menu-section .item .item-info {
+  padding: 5px 20px 15px 15px;
+  width: 100%;
+}
+section .menu-content .menu-section .item .item-description {
+  display: flex;
   justify-content: space-between;
 }
 section .menu-content .menu-section .item h3 {
@@ -132,18 +140,27 @@ section .menu-content .menu-section .item h3 {
 section .menu-content .menu-section .item:hover .check-box {
   display: block;
 }
+section .menu-content .menu-section .item:hover .item-side {
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  max-width: 44%;
+}
 section .menu-content .menu-section .check-box {
+  height: 100%;
   display: none;
   animation: checkbox ease 0.3s;
 }
 section .menu-content .menu-section .check-box .checked-item {
   background-color: #15DEA5;
+  height: 83px;
   color: #fff;
   width: 4rem;
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 section .menu-content .menu-section .check-box .checked-item .check-icon {
   font-size: 2.5rem;
@@ -196,6 +213,11 @@ section button {
   align-self: center;
   margin-top: 25px;
   margin-bottom: 70px;
+  transition: all 1500ms;
+}
+section button:hover {
+  box-shadow: 2px 3px 5px 4px #a9a9a9;
+  background: linear-gradient(#ff8cd9, #9356dc);
 }
 
 /*# sourceMappingURL=main-menu.css.map */
