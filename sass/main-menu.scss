@@ -147,8 +147,9 @@ section{
                      display:flex;
                      justify-content:center;
                      align-items:center;
-                 .check-icon{
+                 .fa-check-circle{
                      font-size:2.5rem;
+                     animation:rolling-icon ease-in-out 0.3s;
                     }
                  }
             }
@@ -172,6 +173,41 @@ section{
                     transform: translate(0px,0);
                 }
 
+            }
+            @keyframes rolling-icon{
+                0%{
+                    transform:rotate(-360deg);
+                }
+                10%{
+                    transform:rotate(-300deg);
+                }
+                20%{
+                    transform:rotate(-280deg);
+                }
+                30%{
+                    transform:rotate(-230deg);
+                }
+                40%{
+                    transform:rotate(-200deg);
+                }
+                50%{
+                    transform:rotate(-180deg);
+                }
+                60%{
+                    transform:rotate(-160deg);
+                }
+                70%{
+                    transform:rotate(-120deg);
+                }
+                80%{
+                    transform:rotate(-80deg);
+                }
+                90%{
+                    transform:rotate(-60deg);
+                }
+                100%{
+                    transform:rotate(0deg);
+                }
             }
             @keyframes card-opacity {
                 from {
