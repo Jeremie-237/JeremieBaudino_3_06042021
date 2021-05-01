@@ -1,0 +1,260 @@
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'footer.scss';
+
+.container{
+    max-width:900px;
+    margin:auto;
+    font-family: Roboto,sans-serif;
+}
+
+header{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    margin:20px 0 20px 0 ;
+    position:relative;
+    a{
+        margin-left:25px;
+        position:absolute;
+        left:0;
+    }
+    .fas{
+        font-weight: bolder;
+        color: black;
+        font-size: x-large;
+    }
+    .header__logo{
+        
+        img{
+            width:250px;
+        }
+    }
+}
+
+section{
+    
+
+    img{
+        width:100%;
+        height:34vmax;
+        object-fit: cover;
+    }
+    .menu{
+         background-color: $backgroundcolor1;
+         padding-left:25px;
+         padding-right:25px;
+         margin-top:-8vw;
+         position:relative;
+         border-top-left-radius: 40px;
+         border-top-right-radius: 40px;
+
+        .restaurant-heading{
+            display:flex;
+            align-items:center;
+            justify-content: space-between;
+            h1{
+                font-family:'Shrikhand';
+                font-size:xx-large;
+            }
+            .heart-menu{
+
+                &:hover{
+                    .empty{
+                         color:transparent;
+                         transition-duration: 1.6s;
+                    }
+                    .full{
+                         background:linear-gradient($purplelight,$purpledark);
+                         -webkit-background-clip: text;
+                         transition: opacity ease-in-out 500ms , transform cubic-bezier(0.42,0,0.51,1) 500ms;
+                         transform: scale(1);
+                    }
+                }
+            }
+            .full{
+                z-index: 1;
+                color: transparent;
+                transform: scale(0);
+                font-size:xx-large;
+            }
+            .empty{
+                font-size:xx-large;
+                position:absolute;
+            }
+        }
+    }
+    .menu-content{
+        display:flex;
+        flex-direction: column;
+
+        .menu-section{
+            opacity:0;
+            animation:card-opacity 2s forwards;
+
+            .heading{
+                border-bottom:3px solid #15DEA5;
+                padding-bottom: 5px;
+                width:45px;
+                font-size: 1.4rem;
+                font-weight: 100;
+            }
+            .item{
+                background-color: #fff;
+                box-shadow: 4px 4px 4px #DCDCDC;
+                margin-bottom:20px;
+                border-radius: 20px;
+                display:flex;
+                align-items:flex-end;
+                justify-content: space-between;
+                overflow-x: hidden;
+                .item-info{
+                    padding:5px 20px 15px 15px;
+                    width:100%;
+                }
+                .item-description{
+                    display:flex;
+                    justify-content: space-between;
+                }
+                h3{
+                    margin-bottom:3px;
+                }
+                &:hover{
+                    .check-box{
+                        display:block;
+                    }
+                    
+                    .item-side{
+                        white-space:nowrap;
+                        overflow-x: hidden;
+                        text-overflow: ellipsis;
+                        max-width: 44%;
+                    }
+                }
+            }
+            .check-box{
+                height:100%;
+                display:none;
+                animation:checkbox ease 0.3s;
+
+                 .checked-item{
+                     background-color: #15DEA5;
+                     height:83px;
+                     color:#fff;
+                     width:4rem;
+                     border-top-right-radius: 18px;
+                     border-bottom-right-radius: 18px;
+                     display:flex;
+                     justify-content:center;
+                     align-items:center;
+                 .fa-check-circle{
+                     font-size:2.5rem;
+                     animation:rolling-icon ease-in-out 0.3s;
+                    }
+                 }
+            }
+            @keyframes checkbox{
+                0%{
+                    transform: translate(50px,0);
+                }
+                20%{
+                    transform: translate(30px,0);
+                }
+                40%{
+                    transform:translate(20px,0);
+                }
+                60%{
+                    transform: translate(15px,0);
+                }
+                80%{
+                    transform:translate(7px,0);
+                }
+                100%{
+                    transform: translate(0px,0);
+                }
+
+            }
+            @keyframes rolling-icon{
+                0%{
+                    transform:rotate(-360deg);
+                }
+                10%{
+                    transform:rotate(-300deg);
+                }
+                20%{
+                    transform:rotate(-280deg);
+                }
+                30%{
+                    transform:rotate(-230deg);
+                }
+                40%{
+                    transform:rotate(-200deg);
+                }
+                50%{
+                    transform:rotate(-180deg);
+                }
+                60%{
+                    transform:rotate(-160deg);
+                }
+                70%{
+                    transform:rotate(-120deg);
+                }
+                80%{
+                    transform:rotate(-80deg);
+                }
+                90%{
+                    transform:rotate(-60deg);
+                }
+                100%{
+                    transform:rotate(0deg);
+                }
+            }
+            @keyframes card-opacity {
+                from {
+                    opacity:0;
+                }
+                to {
+                    opacity:1;
+                }
+            }
+            
+        }
+        .part1{
+            animation-delay: 1s;
+        }
+
+        .part2{
+            animation-delay: 2s;
+        }
+
+        .part3{
+            animation-delay: 3s;
+        }
+    }
+    .order-button{
+        background:linear-gradient($purplelight,$purpledark);
+        color:#fff;
+        border:none;
+        border-radius: 25px;
+        width:60%;
+        height:3.5em;
+        font-size:15px;
+        align-self:center;
+        margin-top:25px;
+        margin-bottom: 70px;
+        transition: all 1500ms;
+        &:hover{
+            box-shadow: 2px 3px 5px 4px #a9a9a9;
+            background:linear-gradient(#ff8cd9,$purpledark)
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
