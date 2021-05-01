@@ -123,7 +123,7 @@
                         .full{
                              background:linear-gradient($purplelight,$purpledark);
                              -webkit-background-clip: text;
-                             transition: opacity ease-in-out 500ms , transform cubic-bezier(0.42,0,0.51,1) 500ms;
+                             transition: opacity ease-in-out 500ms ,transform cubic-bezier(0.42,0,0.51,1) 500ms;
                              transform: scale(1);
                         }
                     }
