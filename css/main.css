@@ -311,6 +311,9 @@ section .menu-content .menu-section .item {
 section .menu-content .menu-section .item .item-info {
   padding: 5px 20px 15px 15px;
   width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 }
 section .menu-content .menu-section .item .item-description {
   display: flex;
