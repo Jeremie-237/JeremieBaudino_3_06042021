@@ -316,6 +316,11 @@ section .menu-content .menu-section .item .item-description {
   display: flex;
   justify-content: space-between;
 }
+section .menu-content .menu-section .item .item-side {
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
 section .menu-content .menu-section .item h3 {
   margin-bottom: 3px;
 }
@@ -323,10 +328,10 @@ section .menu-content .menu-section .item:hover .check-box {
   display: block;
 }
 section .menu-content .menu-section .item:hover .item-side {
+  max-width: calc(100% - 90px);
   white-space: nowrap;
   overflow-x: hidden;
   text-overflow: ellipsis;
-  max-width: 44%;
 }
 section .menu-content .menu-section .check-box {
   height: 100%;
