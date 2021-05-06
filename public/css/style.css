@@ -287,20 +287,31 @@ section .menu-content {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1100px) {
   section .menu-content {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
 }
+@media (min-width: 900px) and (max-width: 1266px) {
+  section .menu-content {
+    flex-direction: column;
+  }
+}
 section .menu-content .menu-section {
   opacity: 0;
   animation: card-opacity 2s forwards;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1100px) {
   section .menu-content .menu-section {
     width: 25rem;
+  }
+}
+@media (min-width: 900px) and (max-width: 1266px) {
+  section .menu-content .menu-section {
+    align-self: center;
+    width: 70%;
   }
 }
 section .menu-content .menu-section .heading {
@@ -457,9 +468,14 @@ section .order-button:hover {
   box-shadow: 2px 3px 5px 4px #a9a9a9;
   background: linear-gradient(#ff8cd9, #9356dc);
 }
-@media (min-width: 1400px) {
+@media (min-width: 1100px) {
   section .order-button {
     max-width: 30rem;
+  }
+}
+@media (min-width: 900px) and (max-width: 1266px) {
+  section .order-button {
+    max-width: 25rem;
   }
 }
 
