@@ -6,7 +6,7 @@
 @import 'main-menu.scss';
 
 .container{
-    max-width:900px;
+    max-width:1700px;
     margin:auto;
     font-family: Roboto,sans-serif;
 }
@@ -81,6 +81,9 @@
         display:flex;
         flex-wrap:wrap;
         justify-content:center;
+        @media (min-width:1286px) and (max-width:1696px){
+            flex-wrap: nowrap;
+        }
         .restaurant{
             position:relative;
             margin:20px;

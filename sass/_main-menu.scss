@@ -3,7 +3,7 @@
 @import 'footer.scss';
 
 .container{
-    max-width:900px;
+    max-width:1700px;
     margin:auto;
     font-family: Roboto,sans-serif;
 }
@@ -87,10 +87,20 @@ section{
     .menu-content{
         display:flex;
         flex-direction: column;
+        @media (min-width:1400px){
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+            
+        
 
         .menu-section{
             opacity:0;
             animation:card-opacity 2s forwards;
+            @media (min-width:1400px){
+                width:25rem;
+            }
 
             .heading{
                 border-bottom:3px solid #15DEA5;
@@ -255,8 +265,13 @@ section{
             box-shadow: 2px 3px 5px 4px #a9a9a9;
             background:linear-gradient(#ff8cd9,$purpledark)
         }
+        @media (min-width:1400px){
+            max-width:30rem;
+        }
     }
 }
+
+
 
 
 

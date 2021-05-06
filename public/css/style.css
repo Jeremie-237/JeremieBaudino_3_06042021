@@ -56,6 +56,7 @@ header .header__logo img {
   justify-content: center;
   font-size: large;
   width: 60%;
+  max-width: 30rem;
   margin: auto;
   height: 3.5rem;
   align-items: center;
@@ -213,7 +214,7 @@ footer ul li a {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1700px;
   margin: auto;
   font-family: Roboto, sans-serif;
 }
@@ -286,9 +287,21 @@ section .menu-content {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 1400px) {
+  section .menu-content {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
 section .menu-content .menu-section {
   opacity: 0;
   animation: card-opacity 2s forwards;
+}
+@media (min-width: 1400px) {
+  section .menu-content .menu-section {
+    width: 25rem;
+  }
 }
 section .menu-content .menu-section .heading {
   border-bottom: 3px solid #15DEA5;
@@ -444,9 +457,14 @@ section .order-button:hover {
   box-shadow: 2px 3px 5px 4px #a9a9a9;
   background: linear-gradient(#ff8cd9, #9356dc);
 }
+@media (min-width: 1400px) {
+  section .order-button {
+    max-width: 30rem;
+  }
+}
 
 .container {
-  max-width: 900px;
+  max-width: 1700px;
   margin: auto;
   font-family: Roboto, sans-serif;
 }
@@ -517,6 +535,11 @@ section .order-button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+@media (min-width: 1286px) and (max-width: 1696px) {
+  .section-restaurants .restaurants {
+    flex-wrap: nowrap;
+  }
 }
 .section-restaurants .restaurants .restaurant {
   position: relative;
